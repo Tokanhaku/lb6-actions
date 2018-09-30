@@ -13,7 +13,7 @@ function parse(input) {
         // (up to 25 by default). While the user is typing the amount, past
         // queries are offered as suggestions.
         return Lib.History.suggestions(input).map(function(item) {
-            return {title: item, icon: "at.obdev.LaunchBar:Text"};
+            return {title: item, icon: "font-awesome:fa-history"};
         });
     }
 
@@ -39,7 +39,7 @@ function parse(input) {
             return {
                 title: actionArg + curr.id + (_input_len === 2 ? " to " : ""),
                 subtitle: curr.currencyName + " (" + curr.id + ")",
-                icon: "money_silver"
+                icon: "font-awesome:fa-sign-in"
             };
         });
 
@@ -49,7 +49,7 @@ function parse(input) {
     } else if (_input_len === 3) {
         return {
             title: _input.splice(0, _input_len-1).join(" ") + " to ",
-            icon: "at.obdev.LaunchBar:EnterText"
+            icon: "font-awesome:fa-lightbulb-o"
         };
     }
 

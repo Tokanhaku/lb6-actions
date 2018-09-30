@@ -34,18 +34,18 @@ function runWithString(string) {
             {
                 title: new_amt + " " + to,
                 subtitle: "Result",
-                icon: "money_gold"
+                icon: "font-awesome:fa-sign-out"
             },
             {
                 title: amt + " " + from,
                 subtitle: "From",
-                icon: "money_silver"
+                icon: "font-awesome:fa-sign-in"
             },
             {
                 title: "1 " + from + " = " + rate.toFixed(5) + " " + to,
                 subtitle: "Exchange Rate",
                 actionArgument: rate.toString(),
-                icon: "at.obdev.LaunchBar:CalculatorResult"
+                icon: "font-awesome:fa-line-chart"
             }
         ];
     } catch (err) {
